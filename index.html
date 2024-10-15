@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Badge Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+</head>
+<body>
+    <button id="homeBtn" class='homebutton'>HOME</button>
+    <div class='sizedbox1'></div>
+    <div class='baseclass'>
+        
+    <div class='mainrow'>
+    <div class='sidetrack1'></div>
+    <div class="container">
+        <!-- Badge Preview -->
+        <div class="badge-preview">
+            <div class="profile-container">
+                <img id="profileImage" src="" alt="Profile Picture">
+            </div>
+            <div class="name" id="badgeName">Your name</div>
+            
+        </div>
+        <div class="horizontalbadge">
+        </div>
+        <!-- Controls -->
+        <div class="controls">
+            <div>
+                <p class='title'>I made it to</p>
+                <p class='title1'> Make-A-Ton 7.0!</p>
+                <p class='intoduction_text'>Celebrate being selected from over 2500 applicants with this personalized e-badge; the first swag out of many to come! This isn't just a badge—it's a testament to your creativity, innovation, and passion.</p>
+                <p class='intoduction_text1'>Let's dive into the details-</p>
+            </div>
+            
+            <div class='sub-container0'>
+            <div class='sub-container01'>
+                <div class='sub-container01_0'>
+                    <label for="imageInput" class="choose_file">Your look?</label>
+                    <input type="file" id="imageInput" accept="image/*">
+                </div>
+                <button id="adjustImageBtn">Final edits?</button>
+            </div>
+            <div class='sub-container02'>
+                <div>
+                <input type="text" id="nameInput" class="inputField" placeholder="Your name?">
+                </div>
+                <button id="downloadBadgeBtn">The badge! 🎉</button>
+            </div>
+            
+        </div>
+        <p class='share_text'>Share your success with pride🤍</p>
+        <div class="social-share">
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check this out!" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" id="linkedinShareBtn" class="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?text=https://yourwebsite.com" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        </div>
+    </div>
+    <div class='sidetrack2'></div>
+</div>
+</div>
+
+    <!-- Modal for Image Adjustment -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adjust Your Image</h2>
+            <div>
+                <img id="cropperImage" src="" alt="Adjustable Image" style="max-width: 100%;">
+            </div>
+            <button id="cropButton">Crop & Save</button>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

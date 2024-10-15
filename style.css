@@ -1,0 +1,1494 @@
+@import url('assets/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+@import url('assets/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/WEB/css/satoshi.css');
+body {
+    background-color: #0E3A8C;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+
+}
+.inputField {
+    width: 300px; /* Adjust width */
+    padding: 10px; /* Space inside the input */
+    font-size: 16px; /* Font size for text */
+    border: 2px solid #EAAE20; /* Border color matching your previous style */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: ClashDisplay-Bold, sans-serif; /* Slight shadow for depth */
+
+}
+
+.inputField:focus {
+    outline: none; /* Remove the default outline on focus */
+    border-color: #E67E22; /* Change border color on focus */
+    box-shadow: 0px 0px 8px rgba(230, 126, 34, 0.6); 
+    font-family: ClashDisplay-Bold, sans-serif;/* Highlight effect on focus */
+}
+.mainrow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.homebutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: transparent;  /* Keep background transparent */
+    color: #EAAE20;                  /* Text color set to yellow */
+    font-weight: bold;              /* Make the text bold */
+    border: none;                   /* Remove button borders */
+    text-decoration: none;          /* Remove underline if it's a link */
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+.homebutton:hover,
+.homebutton:focus,
+.homebutton:active {
+    background-color: transparent;  /* No hover or active background changes */
+    color: #EAAE20;                  /* Keep the text color yellow */
+}
+.sizedbox1{
+    height: 80px;
+}
+.sb1{
+    width: 100%;
+    height: 50px;
+}
+.share_text{
+    margin-top: 50px;
+    font-family: ClashDisplay-Regular, sans-serif;
+    font-size: 18px
+}
+
+.baseclass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidetrack1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+    background-image: url('assets/image 98.png');
+    background-size: cover;
+    background-position: center;
+}
+.sidetrack2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+    background-image: url('assets/image 98.png');
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+}
+.badge-preview {
+    position: relative;
+    width: 561.75px;
+    height: 402.585px;
+    background: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('assets/card.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    perspective: 1000px; /* Create a 3D space for horizontal tilt */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; /* Smooth transition for both horizontal rotation and shadow */
+}
+
+.badge-preview:hover {
+    cursor: pointer;
+}
+
+.badge-preview .profile-container {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 36px;
+    top: 164px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.badge-preview .profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-preview .name {
+    position : absolute;
+    left: 300px;
+    top: 150px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.controls {
+    width: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.title{
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: ClashDisplay-Bold, sans-serif;
+    margin-bottom: 0px;
+    line-height: 2.25rem
+}
+.title1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #EAAE20;
+    font-family: Satoshi-Regular;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.intoduction_text{
+    font-size: 18px;
+    text-align: justify;
+    color: #fff; 
+    margin-bottom: 30px;
+    font-family: Satoshi-Regular, sans-serif;
+}
+.intoduction_text1{
+    font-size: 20px;
+    text-align: justify;
+    color: #fff; 
+    margin-bottom: 30px;
+    font-family: ClashDisplay-Regular, sans-serif;
+}
+.sub-container0 {
+    width: 500px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+}
+
+.sub-container01{
+    width: calc(50% - 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px; 
+
+}
+.sub-container02 {
+    width: calc(50% - 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+}
+.sub-container01_0{
+    margin-bottom: 10px;
+}
+
+.sub-container01 button{
+    margin-top: 3px;
+}
+.sub-container02 button {
+    margin-top: 0px;
+}
+.social-share {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-share a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-share a.instagram {
+    background-image: url('assets/linkedin.png');/* Fallback color */
+    background-size: cover;
+    background-position: center;
+}
+
+.social-share a.twitter {
+    background-image: url('assets/x.png');/* Fallback color */
+    background-size: cover;
+    background-position: center;
+}
+
+.social-share a.linkedin {
+    background-image: url('assets/whatsapp.png');/* Fallback color */
+    background-size: cover;
+    background-position: center;
+}
+
+.social-share a.whatsapp {
+    background-image: url('assets/instagram.png');/* Fallback color */
+    background-size: cover;
+    background-position: center;
+}
+
+.social-share a:hover {
+    opacity: 0.8;
+}
+
+
+.choose_file {
+    margin-top: 14px;
+    width: 210px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #EAAE20; 
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-family: ClashDisplay-Bold, sans-serif;
+    margin-bottom: 0px;
+}
+
+.choose_file:hover {
+    background-color: #EAAE20;
+    border-color: #bbb;
+}
+
+#imageInput {
+    display: none;
+}
+.controls input{
+    margin: 15px 0;
+    padding: 10px;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.controls button {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: ClashDisplay-Bold, sans-serif;
+}
+
+.controls button {
+
+    height: 50px;
+    background-color: #EAAE20;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #14594c;
+}
+
+/* Modal Styles */
+/* Initially hide the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+}
+@media (max-width: 1024px) {
+    .mainrow{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homebutton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: transparent;  /* Keep background transparent */
+        color: #EAAE20;                  /* Text color set to yellow */
+        font-weight: bold;              /* Make the text bold */
+        border: none;                   /* Remove button borders */
+        text-decoration: none;          /* Remove underline if it's a link */
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+    }
+    .homebutton:hover,
+    .homebutton:focus,
+    .homebutton:active {
+        background-color: transparent;  /* No hover or active background changes */
+        color: #EAAE20;                  /* Keep the text color yellow */
+    }
+    .sizedbox1{
+        height: 20px;
+    }
+    
+    .baseclass{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidetrack1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .sidetrack2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        gap: 0px;
+        height: 100vh;           /* Full height to center vertically */
+        max-width: 1024px;
+        margin: 0 auto;          /* Center the container itself */
+    }
+    
+    .badge-preview {
+        position: relative;
+        width: 561.75px;
+        height: 402.585px;
+        background: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url('assets/card.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+    }
+    
+    .badge-preview .profile-container {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 36px;
+        top: 164px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    .badge-preview .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .badge-preview .name {
+        position: absolute;
+        left: 300px;
+        top: 150px;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .horizontalbadge {
+        margin-top: 50px;
+        height: 80px;
+        width: 100%;
+        background-image: url('assets/image 102.png');
+        background-size: cover; /* Ensures the image covers the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+    }
+    
+}
+@media (max-width: 768px) {
+    .mainrow{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homebutton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: transparent;  /* Keep background transparent */
+        color: #EAAE20;                  /* Text color set to yellow */
+        font-weight: bold;              /* Make the text bold */
+        border: none;                   /* Remove button borders */
+        text-decoration: none;          /* Remove underline if it's a link */
+        cursor: pointer;                
+        outline: none;                  
+        appearance: none;               
+    }
+    .homebutton:hover,
+    .homebutton:focus,
+    .homebutton:active {
+        background-color: transparent;  /* No hover or active background changes */
+        color: #EAAE20;                  /* Keep the text color yellow */
+    }
+    .sizedbox1{
+        height: 20px;
+    }
+    
+    .baseclass{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidetrack1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .sidetrack2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        gap: 0px;
+        height: 100vh;           /* Full height to center vertically */
+        max-width: 768px;
+        margin: 0 auto;          /* Center the container itself */
+    }
+    
+    .badge-preview {
+        position: relative;
+        width: 562px;
+        height: 403px;
+        background: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url('assets/card.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+    }
+    
+    .badge-preview .profile-container {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 36px;
+        top: 164px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    .badge-preview .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .badge-preview .name {
+        position: absolute;
+        left: 300px;
+        top: 150px;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .horizontalbadge {
+        margin-top: 50px;
+        height: 80px;
+        width: 100%;
+        background-image: url('assets/image 102.png');
+        background-size: cover; /* Ensures the image covers the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+    }
+    
+    
+    
+}
+
+@media (max-width: 425px) {
+    body {
+        background-color: #0E3A8C;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 50px;
+    
+    }
+    .mainrow{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homebutton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: transparent;  /* Keep background transparent */
+        color: #EAAE20;                  /* Text color set to yellow */
+        font-weight: bold;              /* Make the text bold */
+        border: none;                   /* Remove button borders */
+        text-decoration: none;          /* Remove underline if it's a link */
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+    }
+    .homebutton:hover,
+    .homebutton:focus,
+    .homebutton:active {
+        background-color: transparent;  /* No hover or active background changes */
+        color: #EAAE20;                  /* Keep the text color yellow */
+    }
+    .sizedbox1{
+        height: 80px;
+    }
+    
+    .baseclass{
+        width: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidetrack1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .sidetrack2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        gap: 0px;
+        height: 100vh;           /* Full height to center vertically */
+        max-width: 425px;
+        margin: 0 auto;          /* Center the container itself */
+    }
+    
+    .badge-preview {
+        position: relative;
+        width: 402px;
+        height: 303px;
+        background: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url('assets/card.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+    }
+    
+    .badge-preview .profile-container {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 36px;
+        top: 164px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    .badge-preview .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .badge-preview .name {
+        position: absolute;
+        left: 300px;
+        top: 150px;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    
+    .controls {
+        width: 410px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .intoduction_text{
+        font-size: 16px;
+        text-align: justify;
+        color: #fff; 
+    }
+    .sub-container0 {
+        width: 410px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: stretch; 
+    }
+    
+    .sub-container01{
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5px; 
+    
+    }
+    .sub-container02 {
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .sub-container01_0{
+        margin-bottom: 10px;
+    }
+    
+    .sub-container01 button{
+        margin-top: 3px;
+    }
+    .sub-container02 button {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: #0E3A8C;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 50px;
+    
+    }
+    
+    .mainrow{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homebutton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: transparent;  /* Keep background transparent */
+        color: #EAAE20;                  /* Text color set to yellow */
+        font-weight: bold;              /* Make the text bold */
+        border: none;                   /* Remove button borders */
+        text-decoration: none;          /* Remove underline if it's a link */
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+    }
+    .homebutton:hover,
+    .homebutton:focus,
+    .homebutton:active {
+        background-color: transparent;  /* No hover or active background changes */
+        color: #EAAE20;                  /* Keep the text color yellow */
+    }
+    .sizedbox1{
+        height: 80px;
+    }
+    .title1{
+        font-size: 40px;
+        font-weight: bold;
+        color: #EAAE20;
+        font-family: Satoshi-Regular;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .baseclass{
+        width: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidetrack1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .sidetrack2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    #container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        gap: 0px;
+        height: 100vh;           /* Full height to center vertically */
+        max-width: 375px;
+        margin: 0 auto;          /* Center the container itself */
+    }
+    .badge-preview {
+        position: relative;
+        width: 360px;
+        height: 260px;
+        background: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url('assets/card.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+    }
+    .badge-preview .profile-container {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 36px;
+        top: 164px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .badge-preview .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .badge-preview .name {
+        position: absolute;
+        left: 150px;
+        top: 100px;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    #controls {
+        width: 360px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .intoduction_text{
+        font-size: 16px;
+        text-align: justify;
+        color: #fff; 
+    }
+    .sub-container0 {
+        width: 360px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: stretch; 
+    }
+    .sub-container01{
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5px; 
+    
+    }
+    .sub-container02 {
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .sub-container01_0{
+        margin-bottom: 10px;
+    }
+    
+    .sub-container01 button{
+        margin-top: 3px;
+    }
+    .sub-container02 button {
+        margin-top: 0px;
+    }
+    #choose_file {
+        margin-top: 14px;
+        width: 100px;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #fff; 
+        background-color: #EAAE20; 
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .choose_file:hover {
+        background-color: #EAAE20;
+        border-color: #bbb;
+    }
+    #imageInput {
+        display: none;
+    }
+    #controls input{
+        margin: 15px 0;
+        padding: 10px;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    #controls button {
+        padding: 10px;
+        width: 140px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .controls button {
+    
+        height: 50px;
+        background-color: #EAAE20;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .controls button:hover {
+        background-color: #14594c;
+    }
+
+    .social-share a {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+}
+@media (min-width: 321px) and (max-width: 420px){
+    body {
+        background-color: #0E3A8C;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 50px;
+    
+    }
+    .mainrow{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homebutton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: transparent;  /* Keep background transparent */
+        color: #EAAE20;                  /* Text color set to yellow */
+        font-weight: bold;              /* Make the text bold */
+        border: none;                   /* Remove button borders */
+        text-decoration: none;          /* Remove underline if it's a link */
+        cursor: pointer;                
+        outline: none;                  
+        appearance: none;               
+    }
+    .homebutton:hover,
+    .homebutton:focus,
+    .homebutton:active {
+        background-color: transparent;  /* No hover or active background changes */
+        color: #EAAE20;                  /* Keep the text color yellow */
+    }
+    .sizedbox1{
+        height: 0px;
+    }
+    
+    .baseclass{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidetrack1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .sidetrack2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        gap: 0px;
+        height: 100vh;           /* Full height to center vertically */
+        max-width: 425px;
+        margin: 0 auto;          /* Center the container itself */
+    }
+    
+    .badge-preview {
+        position: relative;
+        width: 300px;
+        height: 220px;
+        background: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url('assets/card.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+    }
+    
+    .badge-preview .profile-container {
+        position: absolute;
+        width: 79px;
+        height: 79px;
+        left: 16.5px;
+        top: 88.5px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    .badge-preview .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .badge-preview .name {
+        position: absolute;
+        left: 120px;
+        top: 135px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-align: right; /* Keep text aligned to the right */
+    }
+    
+    
+    
+    .controls {
+        width: 300px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+    }
+    
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .intoduction_text{
+        font-size: 16px;
+        text-align: justify;
+        color: #fff; 
+    }
+    .sub-container0 {
+        width: 300px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: stretch; 
+    }
+    
+    .sub-container01{
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5px; 
+    
+    }
+    .sub-container02 {
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .sub-container01_0{
+        margin-bottom: 10px;
+    }
+    
+    .sub-container01 button{
+        margin-top: 3px;
+    }
+    .sub-container02 button {
+        margin-top: 0px;
+    }
+    .choose_file {
+        margin-top: 14px;
+        width: 100px;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #fff; 
+        background-color: #EAAE20; 
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .choose_file:hover {
+        background-color: #EAAE20;
+        border-color: #bbb;
+    }
+    
+    #imageInput {
+        display: none;
+    }
+    .controls input{
+        margin: 15px 0;
+        padding: 10px;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .controls button {
+        padding: 10px;
+        width: 140px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .controls button {
+    
+        height: 50px;
+        background-color: #EAAE20;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .controls button:hover {
+        background-color: #14594c;
+    }
+
+    .social-share a {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }}
+@media (max-width: 320px) {
+    body {
+        background-color: #0E3A8C;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 50px;
+    
+    }
+    .mainrow{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .homebutton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: transparent;  /* Keep background transparent */
+        color: #EAAE20;                  /* Text color set to yellow */
+        font-weight: bold;              /* Make the text bold */
+        border: none;                   /* Remove button borders */
+        text-decoration: none;          /* Remove underline if it's a link */
+        cursor: pointer;                
+        outline: none;                  
+        appearance: none;               
+    }
+    .homebutton:hover,
+    .homebutton:focus,
+    .homebutton:active {
+        background-color: transparent;  /* No hover or active background changes */
+        color: #EAAE20;                  /* Keep the text color yellow */
+    }
+    .sizedbox1{
+        height: 0px;
+    }
+    
+    .baseclass{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidetrack1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .sidetrack2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 0px;
+        height: 0px;
+        background-image: url('assets/image 98.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        gap: 0px;
+        height: 100vh;           /* Full height to center vertically */
+        max-width: 425px;
+        margin: 0 auto;          /* Center the container itself */
+    }
+    
+    .badge-preview {
+        position: relative;
+        width: 300px;
+        height: 220px;
+        background: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url('assets/card.png');
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+    }
+    
+    .badge-preview .profile-container {
+        position: absolute;
+        width: 79px;
+        height: 79px;
+        left: 16.5px;
+        top: 88.5px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    .badge-preview .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .badge-preview .name {
+        position: absolute;
+        left: 120px;
+        top: 135px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-align: right; /* Keep text aligned to the right */
+    }
+    
+    
+    
+    .controls {
+        width: 300px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .intoduction_text{
+        font-size: 16px;
+        text-align: justify;
+        color: #fff; 
+    }
+    .sub-container0 {
+        width: 300px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: stretch; 
+    }
+    
+    .sub-container01{
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5px; 
+    
+    }
+    .sub-container02 {
+        width: calc(50% - 10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .sub-container01_0{
+        margin-bottom: 10px;
+    }
+    
+    .sub-container01 button{
+        margin-top: 3px;
+    }
+    .sub-container02 button {
+        margin-top: 0px;
+    }
+    .choose_file {
+        margin-top: 14px;
+        width: 100px;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #fff; 
+        background-color: #EAAE20; 
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .choose_file:hover {
+        background-color: #EAAE20;
+        border-color: #bbb;
+    }
+    
+    #imageInput {
+        display: none;
+    }
+    .controls input{
+        margin: 15px 0;
+        padding: 10px;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .controls button {
+        padding: 10px;
+        width: 140px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .controls button {
+    
+        height: 50px;
+        background-color: #EAAE20;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .controls button:hover {
+        background-color: #14594c;
+    }
+
+    .social-share a {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+}
