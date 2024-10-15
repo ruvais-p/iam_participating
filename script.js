@@ -101,17 +101,23 @@ adjustImageBtn.addEventListener('click', function () {
 });
 
 // Function to download badge as an image
+// Function to download badge as an image with higher resolution
 function downloadBadge() {
     const badge = document.querySelector('.badge-preview');
 
-    // Ensure the canvas properly captures the badge element
-    html2canvas(badge, { backgroundColor: null }).then(canvas => {
+    // Ensure the canvas properly captures the badge element with high resolution
+    html2canvas(badge, {
+        scale: 3, // Increase scale to improve resolution (3x original resolution)
+        useCORS: true, // Enable CORS to handle image resources correctly
+        backgroundColor: null // Preserve transparency if required
+    }).then(canvas => {
         const link = document.createElement('a');
         link.download = 'badge.png'; // File name for the download
         link.href = canvas.toDataURL('image/png'); // Convert canvas to image
         link.click(); // Simulate click to trigger download
     });
 }
+
 
 // Add event listener for download button
 downloadBadgeBtn.addEventListener('click', function () {
